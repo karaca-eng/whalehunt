@@ -91,7 +91,7 @@ async def binance_engine():
     symbols = ["espusdt", "banusdt", "iousdt", "bluaiusdt", "alchusdt", "stousdt",
                "treeusdt", "beatusdt", "btcusdt", "ethusdt", "solusdt", "nightusdt",
                "adausdt", "dogeusdt", "atusdt", "fetusdt", "injusdt", "musdt",
-               "flowusdt", "partiusdt", "tradoorusdt", "avaxusdt"]
+               "flowusdt", "partiusdt", "tradoorusdt", "avaxusdt", "1000ratsusdt"]
 
     streams = "/".join([f"{s.lower()}@aggTrade" for s in symbols])
     uri = f"wss://fstream.binance.com/stream?streams={streams}/!forceOrder@arr"
