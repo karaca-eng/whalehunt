@@ -88,8 +88,8 @@ def check_signals(symbol, now):
 
 # --- 3. BINANCE ENGINE ---
 async def binance_engine():
-    symbols = ["espusdt", "banusdt", "iousdt", "bluaiusdt", "alchusdt", "stousdt",
-               "treeusdt", "beatusdt", "btcusdt", "ethusdt", "solusdt", "nightusdt",
+    symbols = ["espusdt", "kgenusdt", "bsbusdt", "bluaiusdt", "alchusdt", "stousdt",
+               "treeusdt", "beatusdt", "btcusdt", "ethusdt", "solusdt", 
                "adausdt", "dogeusdt", "atusdt", "fetusdt", "injusdt", "musdt",
                "flowusdt", "partiusdt", "tradoorusdt", "avaxusdt", "1000ratsusdt"]
 
