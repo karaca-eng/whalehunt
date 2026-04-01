@@ -9,10 +9,10 @@ from datetime import datetime
 from collections import deque
 
 # --- 1. CONFIGURATION ---
-MIN_IMPACT = 0.20
-MIN_VOL_LIMIT = 25000
+MIN_IMPACT = 0.15
+MIN_VOL_LIMIT = 15000
 LOOKBACK_WINDOW = 3.0
-STREAK_WINDOW = 3
+STREAK_WINDOW = 10
 MAX_ROWS = 50
 
 
@@ -88,10 +88,7 @@ def check_signals(symbol, now):
 
 # --- 3. BINANCE ENGINE ---
 async def binance_engine():
-    symbols = ["espusdt", "kgenusdt", "bsbusdt", "bluaiusdt", "brusdt", "stousdt",
-               "treeusdt", "beatusdt", "btcusdt", "ethusdt", "solusdt", 
-               "adausdt", "dogeusdt", "atusdt", "fetusdt", "injusdt", "musdt",
-               "flowusdt", "partiusdt", "tradoorusdt", "avaxusdt", "1000ratsusdt"]
+    symbols = ["ariausdt", "kernelusdt", "riverusdt", "vineusdt", "atusdt" ]
 
     streams = "/".join([f"{s.lower()}@aggTrade" for s in symbols])
     uri = f"wss://fstream.binance.com/stream?streams={streams}/!forceOrder@arr"
